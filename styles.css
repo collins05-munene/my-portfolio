@@ -1,0 +1,462 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #333333; /* Darker gray */
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#about,
+#projects,
+#contact {
+  margin-bottom: 2rem;
+}
+
+.project {
+  background: #f4f4f4;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(
+    90deg,
+    #007bff,
+    #00c6ff
+  ); /* Electric blue gradient */
+  color: #fff; /* White text for contrast */
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header nav h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Navigation links for larger screens */
+.nav-links {
+  display: flex; /* Display links horizontally */
+  justify-content: flex-end; /* Align links to the right */
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #fff; /* White text for navigation links */
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Hover effect for horizontal navigation links */
+.nav-links li a:hover {
+  color: #fff; /* Keep text color white */
+  background-color: #007bff; /* Add electric blue background */
+  padding: 0.3rem 0.5rem; /* Add padding for better appearance */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff; /* White color for visibility */
+}
+
+/* Navigation menu for smaller screens */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -100%; /* Hidden by default */
+  width: 60%; /* Max width of 60% */
+  height: 100%;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 2rem 1rem;
+  transition: left 0.3s ease; /* Smooth slide-in effect */
+  z-index: 1000;
+}
+
+.nav-menu.active {
+  left: 0; /* Slide in when active */
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin-bottom: 1rem;
+}
+
+.nav-menu ul li a {
+  color: #000; /* Black text for visibility */
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Hover effect for vertical menu links */
+.nav-menu ul li a:hover {
+  color: #fff; /* Change text color to white */
+  background-color: #007bff; /* Add electric blue background */
+  padding: 0.3rem 0.5rem; /* Add padding for better appearance */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.close-menu {
+  font-size: 1.8rem;
+  color: #000; /* Black text for visibility */
+  cursor: pointer;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+/* About Section */
+#about {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9dc; /* Light background for contrast */
+  color: #333; /* Dark text for readability */
+}
+
+/* About Section Main Header */
+.about-header {
+  background-color: #007bff; /* Electric blue background for professionalism */
+  color: #fff; /* White text for contrast */
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  margin-bottom: 2rem;
+}
+
+.about-header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* About Card Headers */
+.about-card-header {
+  background-color: #f0f0f0; /* Light gray background for subtle contrast */
+  color: #333; /* Dark text for readability */
+  padding: 0.8rem 1rem;
+  border-radius: 5px; /* Rounded corners for consistency */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* About Card Styles */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.about-card p,
+.about-list {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Slightly muted text color */
+}
+
+.about-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Hover Effect for About Cards */
+.about-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Projects Section */
+#projects {
+  padding: 2rem 1rem;
+  background-color: #000; /* Black background for contrast */
+  color: #ffd700; /* Gold text for readability */
+}
+
+/* Projects Section Header */
+.projects-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: #333; /* Dark gray background for contrast */
+  color: #ffd700; /* Gold text for readability */
+  padding: 1rem;
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.projects-header h2 {
+  font-size: 2rem;
+  color: #ffd700; /* Gold for the heading */
+}
+
+/* Projects Carousel */
+.projects-carousel {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.projects-carousel::-webkit-scrollbar {
+  height: 8px; /* Custom scrollbar height */
+}
+
+.projects-carousel::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Electric blue scrollbar */
+  border-radius: 4px;
+}
+
+.projects-carousel::-webkit-scrollbar-track {
+  background-color: #ddd; /* Light gray scrollbar track */
+}
+
+/* Project Card */
+.project-card {
+  flex: 0 0 300px; /* Fixed width for each card */
+  background-color: #333; /* Dark gray background for cards */
+  border: 1px solid #ffd700; /* Gold border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(255, 215, 0, 0.2); /* Subtle gold shadow for depth */
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Project Card Header */
+.project-card-header {
+  background-color: #444; /* Slightly lighter gray for card headers */
+  color: #ffd700; /* Gold text for readability */
+  padding: 0.8rem 1rem;
+  border-radius: 5px; /* Rounded corners for consistency */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(255, 215, 0, 0.2); /* Subtle gold shadow for depth */
+}
+
+.project-card-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700; /* Gold for card headings */
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff; /* White text for readability */
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  color: #000; /* Black text for contrast */
+  background-color: #ffd700; /* Gold background */
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.project-link:hover {
+  background-color: #fff; /* White background on hover */
+  color: #000; /* Black text on hover */
+}
+
+/* Hover Effect for Project Cards */
+.project-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 12px rgba(255, 215, 0, 0.4); /* Enhance gold shadow on hover */
+}
+
+/* Contact Section */ /* Contact Section */
+#contact {
+  padding: 2rem 1rem;
+  background-color: whitesmoke; /* Light background for contrast */
+  color: #333; /* Dark text for readability */
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  color: #007bff; /* Blue for the heading */
+  border-bottom: 2px solid #ffd700; /* Gold underline for elegance */
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Card */
+.contact-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #007bff; /* Blue border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 12px rgba(0, 123, 255, 0.4); /* Enhance blue shadow on hover */
+}
+
+/* Contact Icon */
+.contact-icon {
+  font-size: 2rem;
+  color: #ffd700; /* Gold for icons */
+  margin-right: 1rem;
+}
+
+/* Contact Info */
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #007bff; /* Blue for subheadings */
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #333; /* Dark text for readability */
+}
+
+.contact-info a {
+  color: #007bff; /* Blue for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-info a:hover {
+  color: #ffd700; /* Gold text on hover */
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .project {
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links on smaller screens */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on smaller screens */
+  }
+
+  .projects-carousel {
+    gap: 1rem; /* Reduce gap between cards */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+
+  .project-card {
+    flex: 0 0 100%; /* Make the card take up the full width */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .project-card p {
+    font-size: 0.95rem; /* Slightly smaller text for better fit */
+  }
+
+  .project-link {
+    font-size: 0.9rem; /* Adjust button size for smaller screens */
+    padding: 0.4rem 0.8rem; /* Adjust padding for smaller buttons */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  section {
+    padding: 1rem 0.5rem; /* Further reduce padding */
+  }
+
+  .project {
+    padding: 0.5rem; /* Adjust padding for mobile */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Reduce footer text size */
+  }
+}
+
+/* For larger screens (min-width: 769px) */
+@media (min-width: 769px) {
+  .nav-menu {
+    display: none; /* Hide the vertical menu on larger screens */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
+}
