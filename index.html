@@ -3,13 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>
+      Munene Collins – Web Developer | Business, NGO, & School Websites in Kenya
+    </title>
+
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta
+      name="keywords"
+      content="Professional Web Development Services
+    Full-Stack Web Developer Portfolio, Frontend and Backend Web Solutions,
+    Responsive Website Design Services, Affordable Website Development for
+    Businesses, Custom Websites for Companies, Corporate Web Development Kenya,
+    Business Website Design Services, Website Developer for Small and Medium
+    Enterprises, Web Developer for Startups and Firms, Website Design for NGOs,
+    NGO Web Development Services, Affordable NGO Website Packages, NGO Donation
+    Website Developer, Non-Profit Organization Website Portfolio, Hotel Booking
+    Website Developer, Travel Agency Website Development, Tourism Website Design
+    in Kenya, Custom Hotel Websites with Booking Forms, Travel Website with
+    Inquiry and Booking System, School Website Design Services, Education
+    Website Developer Kenya, Custom School Portal Development, Online School
+    Admission Website Developer, Web Developer for Educational Institutions,"
+    />
+    <meta name="author" content="Munene Collins Gitonga" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Munene Collins Designs – Web Development Services"
+    />
+    <meta
+      property="og:description"
+      content="Need a professional website for your business, NGO, or school? Munetech Designs builds responsive, fast, and SEO-optimized sites."
+    />
+    <meta
+      property="og:image"
+      content="https://munene-portfolio.netlify.app/preview.png"
+    />
+    <meta property="og:url" content="https://munene-portfolio.netlify.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Munene Collins Gitonga",
+        "url": "https://munene-portfolio.netlify.app",
+        "jobTitle": "Front-End Web Developer",
+        "sameAs": [
+          "https://www.linkedin.com/in/your-linkedin",
+          "https://github.com/collins05-munene"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header>
       <nav>
-        <h1>Munetech Designs Portfolio</h1>
+        <h1>Munene Collins Designs Portfolio</h1>
         <span class="hamburger">&#9776;</span>
         <!-- Hamburger icon -->
         <div class="nav-menu">
@@ -36,6 +92,7 @@
       <div class="about-container">
         <article class="about-card">
           <header class="about-card-header">
+            <!--  <img src="/ceo.jpg" alt="Munene Collins" class="team-photo" />-->
             <h3>Hi, I'm Munene Collins Gitonga</h3>
           </header>
           <p>
@@ -197,9 +254,40 @@
       <header class="contact-header">
         <h2>Contact Me</h2>
       </header>
+      <!-- Contact Us Section -->
+      <section id="contact">
+        <form
+          action="https://formsubmit.co/collinsgitonga296@gmail.com"
+          method="POST"
+        >
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://munenedesigns.netlify.app/thank-you.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+      </section>
+
       <div class="contact-container">
         <div class="contact-card">
-          <div class="contact-icon">📧</div>
+          <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="contact-info">
+            <h3>Whatsapp</h3>
+            <p><a href="tel:+254790342156">+254 790 342 156</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
           <div class="contact-info">
             <h3>Email</h3>
             <p>
@@ -209,6 +297,8 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="contact-container">
         <div class="contact-card">
           <div class="contact-icon">📞</div>
           <div class="contact-info">
@@ -220,7 +310,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Munetech Designs. All rights reserved.</p>
+      <p>&copy; 2025 Munene Collins Designs. All rights reserved.</p>
     </footer>
 
     <script src="assets/js/main.js"></script>
