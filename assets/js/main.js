@@ -28,6 +28,39 @@ projectCards.forEach(card => {
   observer.observe(card);
 });
 
+//Stats section
+
+  const counters = document.querySelectorAll(".counter");
+  let started = false;
+
+  function animateCounters() {
+    if (!started && isInViewport(document.querySelector("#stats"))) {
+      started = true;
+      counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const increment = target / 100;
+        let count = 0;
+
+        const updateCount = () => {
+          count += increment;
+          if (count < target) {
+            counter.textContent = Math.ceil(count);
+            requestAnimationFrame(updateCount);
+          } else {
+            counter.textContent = target;
+          }
+        };
+        updateCount();
+      });
+    }
+  }
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top <= window.innerHeight;
+  }
+
+  window.addEventListener("scroll", animateCounters);
 
 
 function calculatePrice() {
