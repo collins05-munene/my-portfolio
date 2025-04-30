@@ -635,14 +635,50 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Munene Web Solutions Kenya",
-        "url": "https://munenedesigns.netlify.app",
-        "description": "Affordable web development and web design services for businesses and individuals in Kenya. SEO-optimized, mobile-first websites that grow your business.",
-        "author": {
-          "@type": "Person",
-          "name": "Munene"
-        }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://munenedesigns.netlify.app/#website",
+            "url": "https://munenedesigns.netlify.app",
+            "name": "Munene Web Solutions Kenya",
+            "description": "Affordable web development and web design services for businesses, NGOs, law firms,ecommerce stores and individuals in Kenya. SEO-optimized, mobile-first websites that grow your brand.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Munene Web Solutions",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://res.cloudinary.com/dejq3evca/image/upload/f_auto,q_auto/v1745648239/logo_lhzsat.webp"
+              }
+            }
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://munenedesigns.netlify.app/#localbusiness",
+            "name": "Munene Web Solutions Kenya",
+            "image": "https://res.cloudinary.com/dejq3evca/image/upload/f_auto,q_auto/v1745648239/logo_lhzsat.webp",
+            "url": "https://munenedesigns.netlify.app",
+            "telephone": "+254790342156",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mama Ngina Street",
+              "addressLocality": "Embu",
+              "addressRegion": "Embu County",
+              "postalCode": "60100",
+              "addressCountry": "KE"
+            },
+            "description": "We provide modern web development, responsive design, and SEO services in Kenya for businesses, schools, NGOs,ecommerce stores and entrepreneurs.",
+            "priceRange": "ksh 15000 - ksh 100000",
+            "openingHours": "Mo,Tu,We,Th,Fr,sa 08:00-17:00",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Kenya"
+            },
+            "sameAs": [
+              "https://wa.me/254790342156",
+              "https://twitter.com/@munene-trades"
+            ]
+          }
+        ]
       }
     </script>
 
