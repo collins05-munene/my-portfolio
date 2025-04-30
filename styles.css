@@ -257,7 +257,7 @@ body {
 .project-card {
   margin-bottom: 3rem;
   opacity: 0;
-  background-color: #474242;
+  background-color: #888181;
   color: #5ff971;
   transform: scale(0.9);
   transition: transform 0.6s ease-out, opacity 0.6s ease-out;
@@ -290,9 +290,9 @@ body {
 .visit-button:hover {
   background: #005a5a;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #projects {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
 }
 
