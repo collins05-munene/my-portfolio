@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Project Cost Estimator – Munene Web Solutions</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.6;
+        padding: 2rem;
+        background-color: #fdfdfd;
+        max-width: 900px;
+        margin: auto;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        color: #006666;
+      }
+      fieldset {
+        border: 2px solid #ddd;
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+        background-color: #fff;
+      }
+      legend {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #003333;
+      }
+      label {
+        display: block;
+        margin: 0.8rem 0;
+      }
+      output {
+        display: block;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: green;
+        margin-top: 1rem;
+      }
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Munene Web Solutions - Website Services Cost Estimator</h1>
+      <p>
+        Select the services you need. We’ll give you an estimated cost for your
+        project. This is not the final quote, but it helps you plan better.
+      </p>
+    </header>
+
+    <main>
+      <form id="quoteForm">
+        <section>
+          <fieldset>
+            <legend>1. Custom Website Development</legend>
+            <label>
+              <input type="checkbox" value="17000" />
+              Personal Website (e.g. resume, profile, blog)
+            </label>
+            <label>
+              <input type="checkbox" value="25000" />
+              Business Website (e.g. company profile, services & contact)
+            </label>
+            <label>
+              <input type="checkbox" value="35000" />
+              Professional Website (multi-page, mobile-friendly, animations)
+            </label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>2. Online Booking System</legend>
+            <label>
+              <input type="checkbox" value="10000" />
+              Simple Booking System (for consultancy, small clinics)
+            </label>
+            <label>
+              <input type="checkbox" value="15000" />
+              Booking with Calendar Sync + Email Reminders
+            </label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>3. E-commerce Website</legend>
+            <label>
+              <input type="checkbox" value="25000" />
+              Small Online Shop (up to 20 products)
+            </label>
+            <label>
+              <input type="checkbox" value="35000" />
+              Full Online Store (product pages, cart, mobile-ready)
+            </label>
+            <label>
+              <input type="checkbox" value="75000" />
+              Advanced Store with payments, stock alerts, delivery options
+            </label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>4. AI Chatbot Integration</legend>
+            <label>
+              <input type="checkbox" value="10000" />
+              Basic Chatbot (answers FAQs, works 24/7)
+            </label>
+            <label>
+              <input type="checkbox" value="15000" />
+              Booking Chatbot (helps book appointments, get quotes) – KES 25,000
+            </label>
+            <label>
+              <input type="checkbox" value="20000" />
+              Smart AI Chatbot with memory and WhatsApp integration – KES 35,000
+            </label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>5. SEO Optimization</legend>
+            <label>
+              <input type="checkbox" value="5000" />
+              Basic SEO Setup (keywords, titles, mobile check)
+            </label>
+            <label>
+              <input type="checkbox" value="10000" />
+              SEO + Google Visibility Boost (Google My Business setup, speed)
+            </label>
+            <label>
+              <input type="checkbox" value="15000" />
+              Full SEO Campaign (blogs, backlinks, ranking strategy) –
+            </label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>6. Website Maintenance (Monthly)</legend>
+            <label>
+              <input type="checkbox" value="2000" />
+              Basic: Backups + Minor Fixes (Monthly)
+            </label>
+            <label>
+              <input type="checkbox" value="5000" />
+              Standard: Fixes + Speed Checks + Support
+            </label>
+            <label>
+              <input type="checkbox" value="8000" />
+              Priority: Everything Above + Reports + SEO Tuning
+            </label>
+          </fieldset>
+        </section>
+
+        <section>
+          <button
+            type="button"
+            id="estimateBtn"
+            style="
+              padding: 0.8rem 1.2rem;
+              background-color: #006666;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              font-size: 1rem;
+              cursor: pointer;
+            "
+          >
+            Get Estimate
+          </button>
+          <output
+            id="totalCost"
+            style="
+              margin-top: 1rem;
+              display: block;
+              font-size: 1.4rem;
+              color: green;
+            "
+          ></output>
+          <p
+            id="estimateNote"
+            style="color: #555; font-style: italic; margin-top: 0.5rem"
+          ></p>
+        </section>
+      </form>
+    </main>
+    <footer
+      style="
+        background-color: #f4f4f4;
+        padding: 2rem 1rem;
+        text-align: center;
+        font-size: 0.95rem;
+        color: #333;
+      "
+    >
+      <p>
+        © 2025 <strong>Munene Web Solutions Kenya</strong>. Built with ❤️ in
+        Kenya.
+      </p>
+      <p>
+        WhatsApp:
+        <a
+          href="https://wa.me/254790342156"
+          target="_blank"
+          style="color: #006666; text-decoration: none"
+        >
+          +254 790 342156
+        </a>
+        | Email:
+        <a
+          href="mailto:munenecollins.dev@gmail.com"
+          style="color: #006666; text-decoration: none"
+        >
+          munenecollins.dev@gmail.com
+        </a>
+      </p>
+    </footer>
+
+    <script>
+      const estimateBtn = document.getElementById("estimateBtn");
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const totalOutput = document.getElementById("totalCost");
+      const note = document.getElementById("estimateNote");
+
+      estimateBtn.addEventListener("click", () => {
+        let total = 0;
+        checkboxes.forEach((cb) => {
+          if (cb.checked) total += parseInt(cb.value);
+        });
+        totalOutput.textContent = `Total Estimate: KES ${total.toLocaleString()}`;
+        note.textContent =
+          "Note: All prices are estimates. Munene Web Solutions is open to discussions and negotiations.";
+      });
+    </script>
+  </body>
+</html>
