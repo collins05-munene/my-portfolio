@@ -50,7 +50,7 @@
       href="https://api.iconify.design/mdi:web.svg?color=%23008cba"
     />
 
-    <title>Munene Web Solutions | Web Design & Development Kenya</title>
+    <title>The Web Tenders | Web Design & Development Kenya</title>
 
     <link
       rel="stylesheet"
@@ -60,6 +60,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Lightbox2 CSS & JS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -81,18 +88,18 @@
       <nav class="main-nav">
         <section class="branding">
           <img
-            src="https://res.cloudinary.com/dejq3evca/image/upload/f_auto,q_auto/v1745648239/logo_lhzsat.webp"
+            src="https://res.cloudinary.com/dejq3evca/image/upload/v1746885716/webtenders-logo_n0otmj.webp"
             alt="WebDev Kenya Logo"
             class="logo"
             loading="lazy"
           />
-          <h1>Munene Web Solutions | Web Design & Development Kenya</h1>
+          <h1>The WebTenders</h1>
         </section>
 
         <button class="hamburger" aria-label="Toggle navigation">☰</button>
 
         <ul class="nav-links">
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="/projects.html">Projects</a></li>
           <li><a href="#calculator">Pricing</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Request Service</a></li>
@@ -100,15 +107,13 @@
       </nav>
     </header>
     <section class="hero">
-      <h2>Affordable Web Development and Design in Kenya</h2>
-
-      <p>
-        We design fast, mobile-first websites that grow your businesses at an
-        affordable price.
-      </p>
-      <a href="/qoute.html" class="cta-button">Get a Free Quotation</a>
+      <div class="hero-content">
+        <a href="/qoute.html" class="cta-button">Get a Free Quotation</a>
+        <a href="/projects.html" class="cta-button">View Our Work</a>
+      </div>
     </section>
-    <section id="services">
+
+    <section id="services" class="services">
       <h2>Our Services</h2>
 
       <article class="service-card">
@@ -196,94 +201,76 @@
           </p>
         </section>
       </article>
-
-      <!-- Repeat pattern for other services...-->
     </section>
-
-    <section id="projects">
+    <!--Projects  -->
+    <section class="featured-projects">
       <h2>Featured Projects</h2>
-      <article class="project-card">
-        <h3>AI Car Sales Website Development - Kenya</h3>
+      <div class="projects-grid">
+        <article class="project-item">
+          <a
+            href="https://res.cloudinary.com/yourcloud/image/upload/v1/project1.jpg"
+            data-lightbox="featured"
+            data-title="Eco Villa"
+          >
+            <img
+              src="https://res.cloudinary.com/yourcloud/image/upload/w_600/project1.jpg"
+              alt="Eco Villa Project"
+            />
+          </a>
+          <div class="project-details">
+            <h3>Eco Villa</h3>
+            <p>
+              A sustainable villa blending eco-materials with modern aesthetics.
+            </p>
+            <div class="project-links">
+              <a href="https://wa.me/1234567890" class="btn"
+                >Book on WhatsApp</a
+              >
+              <a href="https://liveproject1.com" class="btn btn-secondary"
+                >View Live</a
+              >
+            </div>
+          </div>
+        </article>
 
-        <p>
-          A premium and responsive car dealership platform designed for luxury
-          and efficiency. This site features a smart AI chatbot that assists
-          users in real-time — helping them find the perfect vehicle based on
-          their preferences such as budget, fuel type, brand, and year. The
-          chatbot can also schedule viewing appointments, suggest similar
-          models, and explain pricing or specs in simple terms.
-        </p>
-        <figure>
-          <img
-            src="https://res.cloudinary.com/dejq3evca/image/upload/f_auto,q_auto/v1745569764/ai-agent_ljokhn.png"
-            alt="AI-powered car sales website screenshot"
-            loading="lazy"
-          />
-          <figcaption>
-            Chatbot-assisted search, specs comparison & smart recommendations
-          </figcaption>
-        </figure>
-        <a
-          href="https://collinscars.vercel.app"
-          target="_blank"
-          class="visit-button"
-          >Visit Site</a
-        >
-      </article>
+        <article class="project-item">
+          <a
+            href="https://res.cloudinary.com/yourcloud/image/upload/v1/project2.jpg"
+            data-lightbox="featured"
+            data-title="Urban Cafe"
+          >
+            <img
+              src="https://res.cloudinary.com/yourcloud/image/upload/w_600/project2.jpg"
+              alt="Urban Cafe Project"
+            />
+          </a>
+          <div class="project-details">
+            <h3>Urban Cafe</h3>
+            <p>
+              An industrial-themed cafe focused on cozy social interaction
+              spaces.
+            </p>
+            <div class="project-links">
+              <a href="https://wa.me/1234567890" class="btn"
+                >Book on WhatsApp</a
+              >
+              <a href="https://liveproject2.com" class="btn btn-secondary"
+                >View Live</a
+              >
+            </div>
+          </div>
+        </article>
 
-      <article class="project-card">
-        <h3>Hotel Booking Site</h3>
-        <p>
-          Automated reservations for beach resort. The site includes a
-          user-friendly booking form where guests can request reservations by
-          selecting room types, number of guests, check-in/check-out dates, and
-          special requests. Upon submission, users receive an instant thank-you
-          message and the resort admin is notified via email with the full
-          inquiry details. Admins respond manually with room confirmation and
-          payment details.
-        </p>
-        <figure>
-          <img
-            src="https://res.cloudinary.com/dejq3evca/image/upload/f_auto,q_auto/v1745570352/booking.screenshot_e6gawc.png"
-            alt="Hotel booking project screenshot"
-          />
-          <figcaption>Mobile-first, fast-loading experience</figcaption>
-        </figure>
-        <a
-          href="https://muneneresort.netlify.app/"
-          target="_blank"
-          class="visit-button"
-          >Visit Website</a
-        >
-      </article>
-      <article class="project-card">
-        <h3>Consultancy Firm with Integrated Booking Site</h3>
-        <p>
-          A professional online booking solution for a consultancy firm offering
-          services like Business Strategy, Market Research, Financial
-          Consulting, and more. Visitors can select a service, provide contact
-          details, and submit requests directly via WhatsApp. Fully responsive
-          and designed for ease of use on mobile devices.
-        </p>
-        <figure>
-          <img
-            src="https://res.cloudinary.com/dejq3evca/image/upload/f_auto,q_auto/v1746013894/consultancy_ohvcs4.webp"
-            alt="Consultancy booking project screenshot"
-          />
-          <figcaption>
-            Quick inquiries via WhatsApp with mobile-friendly layout
-          </figcaption>
-        </figure>
-        <a
-          href="https://munenefirm.netlify.app/"
-          target="_blank"
-          class="visit-button"
-          >Visit Website</a
-        >
-      </article>
+        <!-- Add more <article> blocks as needed -->
+      </div>
+      <div class="cta-container">
+        <a href="/projects.html" class="view-all-btn">View All Projects</a>
+      </div>
     </section>
+
+    <!--Achievements-->
     <section id="stats" class="stats-section">
-      <h2>My Achievements</h2>
+      <h2>The WebTenders Achievements</h2>
       <ul class="stats-list">
         <li class="stat">
           <span class="counter" data-target="2">0</span>+
@@ -564,8 +551,24 @@
               loading="lazy"
             />
             <figcaption>
-              <h3>Munene</h3>
-              <p>Founder & CEO, Munene Web Solutions</p>
+              <h3>Munene Collins</h3>
+              <p>CEO, The WebTenders</p>
+            </figcaption>
+          </figure>
+          <p class="about-text"></p>
+        </section>
+
+        <section class="about-founder">
+          <figure>
+            <img
+              src="https://res.cloudinary.com/dejq3evca/image/upload/f_auto,q_auto/v1745602782/ceo_y5s1y3.webp"
+              alt="Founder and CEO - Munene"
+              class="founder-photo"
+              loading="lazy"
+            />
+            <figcaption>
+              <h3>Morris Nyaga</h3>
+              <p>CTO, The WebTenders</p>
             </figcaption>
           </figure>
           <p class="about-text"></p>
@@ -607,9 +610,7 @@
         </nav>
       </section>
 
-      <small
-        >&copy; 2025 Munene Web Solutions Kenya. Built with ❤️ in Kenya.</small
-      >
+      <small>&copy; 2025 The WebTenders Kenya. Built with ❤️ in Kenya.</small>
       <address>
         WhatsApp: +254 790342156 | Email: munenecollins.dev@gmail.com
       </address>
